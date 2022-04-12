@@ -1,0 +1,17 @@
+{
+    "name": "wills/encase",
+    "description": "Open Source Admin Panel for laravel",
+    "autoload": {
+        "psr-4": {
+            "Wills\\Encase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "williams",
+            "email": "williams.gunawan123@gmail.com"
+        }
+    ],
+    "license": "SEE LICENSE IN /LICENSE",
+    "require": {}
+}
