@@ -14,6 +14,12 @@ class EncaseServiceProvider extends ServiceProvider {
     public function register() {
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'encase');
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        // php artisan vendor:publish --tag=admin --force
+        $this->publishes([
+            __DIR__.'/../resources/css/admin.css' => storage_path('../resources/vendor/encase/css/admin.css'),
+        ], 'admin');
+
+        
     }
 }

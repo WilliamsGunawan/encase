@@ -7,4 +7,5 @@ use Illuminate\Support\Facades\Route;
 use Wills\Encase\Http\Controllers\EncaseController;
 
 Route::get('/main', [EncaseController::class, 'index']);
+Route::get('/admin', [EncaseController::class, 'admin']);
     

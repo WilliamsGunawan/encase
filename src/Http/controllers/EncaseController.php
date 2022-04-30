@@ -13,5 +13,9 @@ class EncaseController extends Controller {
     public function index(Request $request) {
        return view('encase::layout.main');
     }
+    
+    public function admin(Request $request) {
+       return view('encase::layout.admin');
+    }
 
 }
